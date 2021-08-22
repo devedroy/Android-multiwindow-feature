@@ -9,11 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AdjacentActivity"
+        <activity android:name=".ConfigChangeActivity"
+            android:configChanges="screenSize|orientation">
+        </activity>
+        <activity
+            android:name=".AdjacentActivity"
             android:launchMode="singleInstance"
             android:taskAffinity="">
+
         </activity>
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:launchMode="singleInstance"
             android:taskAffinity="">
             <intent-filter>
